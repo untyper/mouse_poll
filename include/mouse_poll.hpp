@@ -15,7 +15,6 @@ private:
         stopped
     } polling_state = state::stopped;
 
-    // void (*callback)(mouse_poll*);
     std::function<void(mouse_poll*)> callback;
     RAWINPUTDEVICE devices[1];
 
